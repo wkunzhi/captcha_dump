@@ -2,6 +2,7 @@
 # __author__ = 'Zok' 362416272@qq.com
 # Date: 2020/09/18 11:37:55
 from core.down_captcha import Cat
+from core.distinguish import start_dist
 
 
 def down_cat(url, count, proxy):
@@ -18,4 +19,4 @@ if __name__ == '__main__':
     proxy = True  # 开启阿布云代理（需在 setting 中配置）
     down_cat(url, count, proxy)
     # ----- 识别 ------
-    distinguish_cat()
+    start_dist()
