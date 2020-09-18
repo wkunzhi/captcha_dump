@@ -4,3 +4,5 @@ tool/__pycache__
 .vscode
 images.zip
 images/*
+.DS_Store
+setting.py

@@ -4,6 +4,8 @@
 
 import requests
 import os
+import sys
+sys.path.append(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
 from tool.abuyun import proxies
 
 class Cat:
@@ -17,6 +19,8 @@ class Cat:
     @property
     def check_file(self):
         rootdir = 'images'
+        if not os.path.exists(rootdir):
+            os.makedirs(rootdir)
         list = os.listdir(rootdir)  # 列出文件夹下所有的目录与文件
         return len(list)
 
